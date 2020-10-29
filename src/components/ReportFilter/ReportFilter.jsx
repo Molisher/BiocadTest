@@ -1,28 +1,48 @@
 import React from "react";
 
-import { Container, Select } from "./style/ReportFilter";
+import {
+  Container,
+  Select,
+  SelectArrow,
+  RadioButton,
+  Wrapper,
+  Button,
+} from "./style/ReportFilter";
 
 const ReportFilter = () => {
   return (
     <Container>
-      <Select>
-        <option value="1 month">1 month</option>
-        <option value="3 month">3 month</option>
-        <option value="6 month">6 month</option>
-      </Select>
-      <p></p>
-      <p>
-        <input name="ReportType" type="radio" value="Calibration" />
-        Calibration
-      </p>
-      <p>
-        <input name="ReportType" type="radio" value="Measuring" />
-        Measuring
-      </p>
-      <p>
-        <input name="ReportType" type="radio" value="Using" />
-        Using
-      </p>
+      <Wrapper>
+        <Select>
+          <option value="1 month">1 month</option>
+          <option value="3 month">3 month</option>
+          <option value="6 month">6 month</option>
+        </Select>
+        <SelectArrow></SelectArrow>
+      </Wrapper>
+      <RadioButton style={{ marginTop: "20px" }}>
+        <input
+          id="calibration"
+          name="ReportType"
+          type="radio"
+          value="Calibration"
+        />
+        <label htmlFor="calibration">Calibration</label>
+      </RadioButton>
+      <RadioButton>
+        <input
+          id="measuring"
+          name="ReportType"
+          type="radio"
+          value="Measuring"
+        />
+        <label htmlFor="measuring">Measuring</label>
+      </RadioButton>
+      <RadioButton>
+        <input id="using" name="ReportType" type="radio" value="Using" />
+        <label htmlFor="using">Using</label>
+      </RadioButton>
+      <Button>Generate report</Button>
     </Container>
   );
 };

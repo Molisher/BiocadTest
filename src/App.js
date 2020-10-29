@@ -1,4 +1,10 @@
-import { Search, Scale, ReportFilter } from "./components";
+import {
+  Search,
+  Scale,
+  ReportFilter,
+  DeviceInfo,
+  CalibrationReport,
+} from "./components";
 
 import { Wrapper, Container } from "./AppStyles";
 
@@ -11,8 +17,9 @@ function App() {
           <Scale />
           <ReportFilter />
         </Container>
-        <Container>Hello2</Container>
+        <DeviceInfo />
       </Wrapper>
+      <CalibrationReport />
     </div>
   );
 }
