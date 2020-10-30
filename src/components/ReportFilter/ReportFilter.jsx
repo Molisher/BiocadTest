@@ -22,7 +22,7 @@ const ReportFilter = () => {
       </Wrapper>
       <RadioButton style={{ marginTop: "20px" }}>
         <input
-          defaultValue
+          checked
           id="calibration"
           name="ReportType"
           type="radio"
