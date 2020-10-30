@@ -40,6 +40,13 @@ const CalibrationReport = () => {
         slopeSuccess
         offset="-0.3"
         offsetSuccess
+        user="Петров Иван Генадьевич"
+      />
+      <Report
+        slope="98.7"
+        slopeSuccess
+        offset="-0.3"
+        offsetSuccess
         user="Петров Генадий Иванович"
       />
       <Report
