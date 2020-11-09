@@ -23,6 +23,10 @@ export const Input = styled.input`
   outline: 0;
   line-height: 24px;
   letter-spacing: 0.16px;
+
+  &:focus {
+    outline: #4990e2 solid 1px;
+  }
 `;
 export const Button = styled.button`
   padding: 8px 22.5px;
@@ -37,7 +41,8 @@ export const Button = styled.button`
   letter-spacing: 0.16px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 `;

@@ -20,6 +20,10 @@ export const Select = styled.select`
   padding-left: 12px;
   width: 100%;
   cursor: pointer;
+
+  &:focus {
+    outline: #4990e2 solid 1px;
+  }
 `;
 
 export const SelectArrow = styled.p`
@@ -61,7 +65,9 @@ export const Button = styled.button`
   padding: 8px 0;
   width: 180px;
   cursor: pointer;
-  &:hover {
+
+  &:hover,
+  &:focus {
     opacity: 0.8;
   }
 `;

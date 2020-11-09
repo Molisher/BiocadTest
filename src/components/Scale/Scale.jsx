@@ -6,7 +6,7 @@ import { Container, Title } from "./style/Scale";
 const Scale = () => {
   return (
     <Container>
-      <img src={scale} alt="Scale img"></img>
+      <img src={scale} alt="Device"></img>
       <Title>Аналитические весы OHAUS Adventurer АХ324 (B715976163)</Title>
     </Container>
   );
